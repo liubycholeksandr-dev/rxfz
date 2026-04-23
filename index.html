@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>rxfz studios – Brawler Lab</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <h1>rxfz studios</h1>
+    <span class="tagline">Brawler & Skin Creator</span>
+  </header>
+
+  <main class="layout">
+    <section class="panel">
+      <h2>Create Brawler</h2>
+      <label>Name</label>
+      <input id="brawlerName" type="text" />
+
+      <label>Class</label>
+      <input id="brawlerClass" type="text" />
+
+      <label>Rarity</label>
+      <select id="brawlerRarity">
+        <option>Common</option>
+        <option>Rare</option>
+        <option>Epic</option>
+        <option>Mythic</option>
+        <option>Legendary</option>
+        <option>Celestial</option>
+      </select>
+
+      <label>Description</label>
+      <textarea id="brawlerDesc"></textarea>
+
+      <button id="addBrawlerBtn">Add Brawler</button>
+    </section>
+
+    <section class="panel">
+      <h2>Create Skin</h2>
+      <label>For Brawler</label>
+      <input id="skinFor" type="text" />
+
+      <label>Skin Name</label>
+      <input id="skinName" type="text" />
+
+      <label>Theme</label>
+      <input id="skinTheme" type="text" />
+
+      <button id="addSkinBtn">Add Skin</button>
+    </section>
+
+    <section class="panel">
+      <h2>Submissions</h2>
+      <ul id="submissionList"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
